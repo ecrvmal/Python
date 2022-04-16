@@ -46,7 +46,7 @@ while i <= max_number :
 
         if sum_of_digits % 7 == 0:
             sum_result += i
-            print (' i = ',i, '   cube = ',cube, '[' , sum_of_digits,']', 'Summ = ', sum_result  )
+            print (i, ' ^3 = ',cube, '[' , sum_of_digits,']', 'Summ = ', sum_result  )
     i += 1
 
 print('\n  Task result :  ' ,  sum_result )
