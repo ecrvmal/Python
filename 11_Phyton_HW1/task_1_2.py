@@ -32,20 +32,21 @@ i = 1
 sum_result=0
 
 while i <= max_number :
-    sum_of_digits = 0
-    cube = i ** 3
-    digit = cube
-    while True:
-        element =  digit % 10        # take last digit
-        sum_of_digits += element     # add the element to  summ
-        if element == digit:         # if this is last element in digit then exit
-            break
-        else:
-            digit = digit // 10        # shift digits to 1 place
+    if ( i % 2) ==1:
+        sum_of_digits = 0
+        cube = i ** 3
+        digit = cube
+        while True:
+            element =  digit % 10        # take last digit
+            sum_of_digits += element     # add the element to  summ
+            if element == digit:         # if this is last element in digit then exit
+                break
+            else:
+                digit = digit // 10        # shift digits to 1 place
 
-    if sum_of_digits % 7 == 0:
-        sum_result += i
-        print (' i = ',i, '   cube = ',cube, '[' , sum_of_digits,']', 'Summ = ', sum_result  )
+        if sum_of_digits % 7 == 0:
+            sum_result += i
+            print (' i = ',i, '   cube = ',cube, '[' , sum_of_digits,']', 'Summ = ', sum_result  )
     i += 1
 
 print('\n  Task result :  ' ,  sum_result )
