@@ -1,0 +1,91 @@
+Microsoft Windows [Version 10.0.19044.1645]
+(c) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+
+C:\Users\ecrvm>pip freeze
+
+C:\Users\ecrvm>pip freeze pillow
+
+C:\Users\ecrvm>pip install pillow
+Collecting pillow
+  Using cached Pillow-9.1.0-cp39-cp39-win_amd64.whl (3.3 MB)
+Installing collected packages: pillow
+Successfully installed pillow-9.1.0
+WARNING: You are using pip version 20.2.3; however, version 22.0.4 is available.
+You should consider upgrading via the 'c:\users\ecrvm\appdata\local\programs\python\python39\python.exe -m pip install --upgrade pip' command.
+
+C:\Users\ecrvm>pip freeze pillow
+Pillow==9.1.0
+
+C:\Users\ecrvm>cd GB
+
+C:\Users\ecrvm\GB>dir
+ Том в устройстве C не имеет метки.
+ Серийный номер тома: 0CEA-0642
+
+ Содержимое папки C:\Users\ecrvm\GB
+
+27.04.2022  14:39    <DIR>          .
+27.04.2022  14:39    <DIR>          ..
+14.04.2022  22:41    <DIR>          Courses
+16.04.2022  14:12    <DIR>          repo
+27.04.2022  15:12    <DIR>          virt
+               0 файлов              0 байт
+               5 папок  1 464 315 035 648 байт свободно
+
+C:\Users\ecrvm\GB>dir
+ Том в устройстве C не имеет метки.
+ Серийный номер тома: 0CEA-0642
+
+ Содержимое папки C:\Users\ecrvm\GB
+
+27.04.2022  17:10    <DIR>          .
+27.04.2022  17:10    <DIR>          ..
+14.04.2022  22:41    <DIR>          Courses
+16.04.2022  14:12    <DIR>          repo
+               0 файлов              0 байт
+               4 папок  1 464 317 136 896 байт свободно
+
+C:\Users\ecrvm\GB>python -m venv virt
+
+C:\Users\ecrvm\GB>dir
+ Том в устройстве C не имеет метки.
+ Серийный номер тома: 0CEA-0642
+
+ Содержимое папки C:\Users\ecrvm\GB
+
+27.04.2022  17:10    <DIR>          .
+27.04.2022  17:10    <DIR>          ..
+14.04.2022  22:41    <DIR>          Courses
+16.04.2022  14:12    <DIR>          repo
+27.04.2022  17:10    <DIR>          virt
+               0 файлов              0 байт
+               5 папок  1 464 300 343 296 байт свободно
+
+C:\Users\ecrvm\GB>cd virt
+
+C:\Users\ecrvm\GB\virt>pip freeze
+Pillow==9.1.0
+
+C:\Users\ecrvm\GB\virt>Scripts\activate.bat
+
+(virt) C:\Users\ecrvm\GB\virt>pip freeze
+
+(virt) C:\Users\ecrvm\GB\virt>pip freeze pillow
+
+(virt) C:\Users\ecrvm\GB\virt>pip install pillow==8.4.0
+Collecting pillow==8.4.0
+  Using cached Pillow-8.4.0-cp39-cp39-win_amd64.whl (3.2 MB)
+Installing collected packages: pillow
+Successfully installed pillow-8.4.0
+WARNING: You are using pip version 20.2.3; however, version 22.0.4 is available.
+You should consider upgrading via the 'c:\users\ecrvm\gb\virt\scripts\python.exe -m pip install --upgrade pip' command.
+
+(virt) C:\Users\ecrvm\GB\virt>pip freeze
+Pillow==8.4.0
+
+(virt) C:\Users\ecrvm\GB\virt>Scripts\deactivate.bat
+C:\Users\ecrvm\GB\virt>
+C:\Users\ecrvm\GB\virt>pip freeze
+Pillow==9.1.0
+
+C:\Users\ecrvm\GB\virt>
